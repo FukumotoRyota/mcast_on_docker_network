@@ -1,0 +1,12 @@
+version: '3'
+services:
+  client1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+  client2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
