@@ -1,4 +1,4 @@
-FROM openjdk:7
+FROM openjdk:14
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN javac MulticastClient.java

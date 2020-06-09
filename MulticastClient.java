@@ -72,9 +72,9 @@ class Receiver extends Thread {
 }
 
 public class MulticastClient {
-
   public static final int PORT = 3000;
   public static final String MCAST_ADDR = "224.0.1.1";
+
   public static void main(String args[]) {
     Receiver receiver = new Receiver(PORT,  MCAST_ADDR);
     Sender sender = new Sender(PORT,  MCAST_ADDR);
